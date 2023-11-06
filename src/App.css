@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Segoe-UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e0e6fc;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.header-container {
+  width: 500px;
+  height: 50px;
+  background: #af7eeb;
+  filter: drop-shadow(0 16px 16px rgba(0, 0, 0, 0.3));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.todo-lists-section {
+  width: 500px;
+  heigth: auto;
+  background-color: white;
+  filter: drop-shadow(0 16px 16px rgba(0, 0, 0, 0.3));
+  margin-top: 40px;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.todo-lists {
+  list-style: none;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.todo-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #afbc6f;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.check-list {
+  width: 20px;
+  height: 20px;
+  width: 10%;
+  accent-color: #ae7ee9;
+  cursor: pointer;
+}
+
+.text {
+  cursor: pointer;
+  width: 80%;
+}
+
+.trash-icon {
+  width: 10%;
+  cursor: pointer;
+  float: right;
+  font-size: 32px;
+}
+
+.new-task-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 200px;
+  padding: 15px;
+  outline: none;
+  border: none;
+  background: #af7eeb;
+  border-radius: 30px;
   color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.new-task-btn:hover {
+  background: #7c24e7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-section {
+  margin-top: 40px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  filter: drop-shadow(0 16px 16px rgba(0, 0, 0, 0.3));
+  padding-left: 10px;
+}
+
+.input-field {
+  width: 60%;
+  height: 40px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: #afb6cf;
+}
+
+.input-field:placeholder {
+  color: #afb6cf;
+}
+
+.save-btn {
+  outline: none;
+  border: none;
+  background: #af7eeb;
+  height: 40px;
+  width: 18%;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.save-btn:hover {
+  background: #7c24e7;
+}
+
+.cancel-btn {
+  outline: none;
+  border: none;
+  background: white;
+  height: 40px;
+  width: 18%;
+  color: #af7eeb;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.not-found {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #777;
+  letter-spacing: 2px;
+}
+
+.completed-task {
+  text-decoration: line-through;
 }
